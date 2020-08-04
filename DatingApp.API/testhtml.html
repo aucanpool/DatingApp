@@ -1,0 +1,7 @@
+<div class="input-group">
+      <input ID="txtPassword" type="Password" Class="form-control">
+      <div class="input-group-append">
+            <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()"> <span class="fa fa-eye-slash icon"></span> </button>
+          </div>
+              <input type="text" id="fecha_pago" name="fecha_pago" value="@Model.fecha_pago.ToString(Locale.FormatoFechaString)" class="form-control input-datepicker input-md" autocomplete="off" data-date-enable-on-readonly="false" data-date-format="@Locale.FormatoDateDatepicker" @(SecurityHelper.ActionIsAllowed("cobranza-editar") ? string.Empty : "readonly")>
+                        

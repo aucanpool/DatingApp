@@ -1,0 +1,14 @@
+{"id_evento_sistema":3,
+	"id_tipo_evento":128,
+	"id_relacion": 9,
+	"fecha_registro":"2020-06-15T19:35:11",
+	"fecha_inicio_proceso":null,
+	"fecha_fin_proceso":null,
+	"id_estatus":49,
+"id_estatus_proceso":0}
+
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            path = path.Replace("bin\\", "");
+            path = path.Replace("Debug\\", "");
+            path = path.Replace("Release\\", "");
+            _logPath = string.Format("{0}LogFiles\\sftp_{1}.log",path,DateTime.Now.ToString("yyyyMMdd"));
