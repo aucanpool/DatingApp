@@ -31,6 +31,7 @@ namespace DatingApp.API
             services.AddCors(x=>{
                 x.AddPolicy("AllowOrigin",options=>options.AllowAnyOrigin());
             });
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
